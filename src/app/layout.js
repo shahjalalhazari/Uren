@@ -1,6 +1,6 @@
 import { Work_Sans } from 'next/font/google';
 import "./globals.css";
-import Navbar from './components/shared/Navbar';
+import Navbar from './components/shared/Navbar/Navbar';
 
 const workSans = Work_Sans({
   subsets: ['latin'],
@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${workSans.className} antialiased px-8 pt-5`}
+        className={`${workSans.className} antialiased pt-5`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
       </body>
     </html>

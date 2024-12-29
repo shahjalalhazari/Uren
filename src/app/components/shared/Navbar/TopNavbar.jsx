@@ -4,25 +4,9 @@ import { BiShoppingBag, BiSolidPhone } from "react-icons/bi";
 
 const TopNavbar = () => {
   return (
-    <div className="navbar bg-base-100 flex justify-between">
+    <div className="navbar bg-base-100 flex justify-between px-8">
       {/* LOGO */}
       <div className="">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <Link href={"/"}>
-              <Image
-                width={"190"}
-                height={"40"}
-                src="/images/menu/logo/2.png"
-                alt="Uren's Logo"
-              />
-            </Link>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          ></ul>
-        </div>
         <Link href="/">
           <Image
             width={"190"}
