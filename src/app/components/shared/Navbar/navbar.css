@@ -1,0 +1,25 @@
+/* BOTTOM NAVBAR */
+.btm-nav-bg {
+    @apply bg-primary px-8 py-0 mt-5 flex justify-between items-center gap-x-10;
+}
+
+.category-list-heading {
+    @apply bg-[#000] cursor-pointer text-base-100 flex justify-between items-center py-[14px] px-4;
+}
+
+.category-list-heading-text {
+    @apply uppercase flex-col font-semibold lg:pl-4 lg:pr-20 leading-none;
+}
+
+.category-list {
+    @apply absolute top-full left-0 bg-base-100 border border-primary py-0 px-5 block w-full shadow-lg transition-all ease-in-out duration-300;
+    top: calc(100% - 1px);
+}
+
+.dropdown-list {
+    @apply absolute top-10 right-0 w-max px-4 py-2 border border-primary bg-white text-black shadow-lg transition-all duration-300;
+}
+
+.dropdown-list-item {
+    @apply p-2 hover:bg-gray-100 hover:text-secondary
+}
