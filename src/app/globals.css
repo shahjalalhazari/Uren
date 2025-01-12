@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Primary Button */
+.primary-btn {
+    @apply bg-primary px-10 py-3 font-semibold uppercase shadow-md rounded-md;
+}
+
+.primary-btn:hover {
+    @apply text-secondary
+}
+
+/* CAROUSEL ANIMATIONS */
+/* Animation Style 01 */
+.slick-active.animation-style-01 .carousel-text>h5 {
+    display: block;
+    -webkit-animation: 1000ms ease-in-out 0s normal none 1 running zoomInUp;
+    animation: 1000ms ease-in-out 0s normal none 1 running zoomInUp;
+}
+
+.slick-active.animation-style-01 .carousel-text>h2 {
+    -webkit-animation: 1200ms ease-in-out 0s normal none 1 running zoomInUp;
+    animation: 1200ms ease-in-out 0s normal none 1 running zoomInUp;
+}
+
+.slick-active.animation-style-01 .carousel-text>div {
+    -webkit-animation: 1400ms ease-in-out 0s normal none 1 running zoomInUp;
+    animation: 1400ms ease-in-out 0s normal none 1 running zoomInUp;
+}
+
+.slick-active.animation-style-01 .carousel-text>p {
+    -webkit-animation: 1600ms ease-in-out 0s normal none 1 running zoomInUp;
+    animation: 1600ms ease-in-out 0s normal none 1 running zoomInUp;
+}
+
+.slick-active.animation-style-01 .carousel-text>.primary-btn {
+    -webkit-animation: 1800ms ease-in-out 0s normal none 1 running zoomInUp;
+    animation: 1800ms ease-in-out 0s normal none 1 running zoomInUp;
+}
+
+/* Animation Style 02 */
+.slick-active.animation-style-02 .carousel-text>h5 {
+    -webkit-animation: 1400ms ease-in-out 0s normal none 1 running zoomInLeft;
+    animation: 1400ms ease-in-out 0s normal none 1 running zoomInLeft;
+}
+
+.slick-active.animation-style-02 .carousel-text>h2 {
+    -webkit-animation: 1600ms ease-in-out 0s normal none 1 running zoomInLeft;
+    animation: 1600ms ease-in-out 0s normal none 1 running zoomInLeft;
+}
+
+.slick-active.animation-style-02 .carousel-text>div {
+    -webkit-animation: 1800ms ease-in-out 0s normal none 1 running zoomInLeft;
+    animation: 1800ms ease-in-out 0s normal none 1 running zoomInLeft;
+}
+
+.slick-active.animation-style-02 .carousel-text>p {
+    -webkit-animation: 2000ms ease-in-out 0s normal none 1 running zoomInLeft;
+    animation: 2000ms ease-in-out 0s normal none 1 running zoomInLeft;
+}
+
+.slick-active.animation-style-02 .carousel-text>.primary-btn {
+    -webkit-animation: 2200ms ease-in-out 0s normal none 1 running zoomInLeft;
+    animation: 2200ms ease-in-out 0s normal none 1 running zoomInLeft;
+}

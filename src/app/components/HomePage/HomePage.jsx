@@ -1,3 +1,4 @@
+import "./home-page.css";
 import CarouselBanner from "./CarouselBanner";
 
 const HomePage = () => {

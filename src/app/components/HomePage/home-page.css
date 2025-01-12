@@ -1,0 +1,36 @@
+/* CAROUSEL */
+.carousel-bg {
+    @apply carousel-item relative w-full h-[90vh] bg-cover;
+}
+
+.carousel-content {
+    @apply text-white text-center flex items-center ml-[100px];
+}
+
+.carousel-sub-heading {
+    @apply text-2xl text-secondary font-bold uppercase;
+}
+
+.carousel-heading {
+    @apply text-5xl text-primary uppercase font-bold;
+}
+
+.carousel-btns {
+    @apply absolute bottom-[50px] right-[50px] flex gap-3 transform justify-between;
+}
+
+.carousel-left-btn {
+    @apply btn btn-circle border-none bg-secondary;
+}
+
+.carousel-left-btn:hover {
+    @apply bg-secondary text-white
+}
+
+.carousel-right-btn {
+    @apply btn btn-circle border-none bg-primary;
+}
+
+.carousel-right-btn:hover {
+    @apply bg-primary text-secondary
+}

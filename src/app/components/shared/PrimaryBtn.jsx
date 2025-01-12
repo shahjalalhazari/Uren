@@ -3,7 +3,7 @@ import React from "react";
 
 const PrimaryBtn = ({ text, path }) => {
   return (
-    <button className="bg-primary px-10 py-3 font-semibold uppercase shadow-md rounded-md hover:text-secondary">
+    <button className="primary-btn">
       <Link href={path}>{text}</Link>
     </button>
   );
