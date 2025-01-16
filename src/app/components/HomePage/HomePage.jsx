@@ -2,6 +2,7 @@ import "./home-page.css";
 import CarouselBanner from "./CarouselBanner";
 import OfferBanners from "./OfferBanners";
 import ShoppingFacilities from "./ShoppingFacilities";
+import FeaturedCategories from "./FeaturedCategories";
 
 const HomePage = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage = () => {
       <CarouselBanner />
       <OfferBanners />
       <ShoppingFacilities />
+      <FeaturedCategories />
     </div>
   );
 };
