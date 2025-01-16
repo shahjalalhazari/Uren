@@ -48,7 +48,7 @@ const OfferBanners = () => {
   };
 
   return (
-    <div className="px-8 py-0 my-20">
+    <div className="mx-4 p-0 my-20">
       <Carousel
         swipeable={true}
         draggable={true}
