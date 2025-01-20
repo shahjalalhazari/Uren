@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SectionHeading from "../shared/SectionHeading";
-import CategoryItemCard from "../shared/HomePage/CategoryItemCard";
+import CategoryItemCard from "./components/CategoryItemCard";
 
-const FeaturedCategories = () => {
+const FeaturedCategoriesSection = () => {
   const [deviceType, setDeviceType] = useState("desktop");
 
   useEffect(() => {
@@ -80,7 +80,7 @@ const FeaturedCategories = () => {
   );
 };
 
-export default FeaturedCategories;
+export default FeaturedCategoriesSection;
 
 const featuredCategories = [
   {

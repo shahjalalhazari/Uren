@@ -1,4 +1,4 @@
-/* CAROUSEL BANNER */
+/* CAROUSEL BANNER SECTION */
 .carousel-bg {
     @apply carousel-item relative w-full h-[90vh] bg-cover;
 }
@@ -37,7 +37,7 @@
 /* ---------------- */
 
 
-/* SHOPPING FACILITIES */
+/* SHOPPING FACILITIES SECTION */
 .shopping-facilities {
     @apply mx-8 py-0 mb-20 border border-primary;
 }
@@ -64,4 +64,21 @@
 
 .item-content>p {
     @apply text-[#999]
+}
+/* FEATURED PRODUCTS SECTION */
+/* Countdown Timer */
+.timer-container {
+    @apply flex text-center gap-5 justify-center;
+}
+
+.timer-box {
+    @apply flex flex-col items-center justify-center border-2 border-[#ddd] py-3 px-2;
+}
+
+.timer-box>h5 {
+    @apply text-primary text-xl font-semibold leading-tight;
+}
+
+.timer-box>p {
+    @apply text-sm text-[#999]
 }

@@ -10,6 +10,15 @@
     @apply text-secondary
 }
 
+/* Add To Cart Button */
+.add-to-cart-btn {
+    @apply bg-primary flex justify-center items-center gap-x-2 p-3 font-semibold uppercase;
+}
+
+.add-to-cart-btn:hover {
+    @apply shadow-lg;
+}
+
 /* CAROUSEL ANIMATIONS */
 /* Animation Style 01 */
 .slick-active.animation-style-01 .carousel-text>h5 {

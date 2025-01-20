@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const OfferBanners = () => {
+const OfferBannersSection = () => {
   const [deviceType, setDeviceType] = useState("desktop");
 
   useEffect(() => {
@@ -85,7 +85,7 @@ const OfferBanners = () => {
   );
 };
 
-export default OfferBanners;
+export default OfferBannersSection;
 
 const offerBannersList = [
   {

@@ -6,7 +6,7 @@ import {
   BiLockAlt,
 } from "react-icons/bi";
 
-const ShoppingFacilities = () => {
+const ShoppingFacilitiesSection = () => {
   return (
     <div className="shopping-facilities">
       <div className="shopping-facilities-layout">
@@ -66,4 +66,4 @@ const ShoppingFacilities = () => {
   );
 };
 
-export default ShoppingFacilities;
+export default ShoppingFacilitiesSection;

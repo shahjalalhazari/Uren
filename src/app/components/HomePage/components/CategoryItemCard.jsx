@@ -3,13 +3,14 @@ import Link from "next/link";
 
 const CategoryItemCard = ({ categoryItem }) => {
   return (
-    <div className="bg-white flex flex-col items-center text-center border-t border-l border-b border-[#ddd] py-5">
+    <div className="bg-white flex flex-col items-center text-center border-t border-l border-b border-[#ddd] py-5 hover:shadow-xl">
       <Link href={`/categories/${encodeURIComponent(categoryItem.name)}`}>
         <Image
           src={categoryItem.image}
           width={200}
           height={220}
           alt={categoryItem.name}
+          className=""
         />
       </Link>
       {/* REPLACE */}

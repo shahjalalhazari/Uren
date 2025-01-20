@@ -3,7 +3,7 @@ import Link from "next/link";
 import PrimaryBtn from "../shared/PrimaryBtn";
 import { useState } from "react";
 
-const CarouselBanner = () => {
+const CarouselBannerSection = () => {
   const [activeIndex, setActiveIndex] = useState(0); // Track active slide index
   const [animationKey, setAnimationKey] = useState(0); // Force animation re-render
 
@@ -68,7 +68,7 @@ const CarouselBanner = () => {
   );
 };
 
-export default CarouselBanner;
+export default CarouselBannerSection;
 
 const banners = [
   {
