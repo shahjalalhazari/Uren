@@ -45,16 +45,19 @@ const CountdownTimer = ({ targetDate }) => {
         <h5>{timeLeft.days}</h5>
         <p>Days</p>
       </div>
+      <span className="font-bold text-xl text-[#999]">:</span>
       {/* Hours Left */}
       <div className="timer-box">
         <h5>{timeLeft.hours}</h5>
         <p>Hrs</p>
       </div>
+      <span className="font-bold text-xl text-[#999]">:</span>
       {/* Minutes Left */}
       <div className="timer-box">
         <h5>{timeLeft.minutes}</h5>
         <p>Mins</p>
       </div>
+      <span className="font-bold text-xl text-[#999]">:</span>
       {/* Seconds Left */}
       <div className="timer-box">
         <h5>{timeLeft.seconds}</h5>

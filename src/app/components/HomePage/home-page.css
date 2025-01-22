@@ -68,7 +68,7 @@
 /* FEATURED PRODUCTS SECTION */
 /* Countdown Timer */
 .timer-container {
-    @apply flex text-center gap-5 justify-center;
+    @apply flex text-center justify-between items-center;
 }
 
 .timer-box {

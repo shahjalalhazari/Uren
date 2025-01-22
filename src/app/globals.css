@@ -5,7 +5,6 @@
 .primary-btn {
     @apply bg-primary px-10 py-3 font-semibold uppercase shadow-md rounded-md;
 }
-
 .primary-btn:hover {
     @apply text-secondary
 }
@@ -14,9 +13,18 @@
 .add-to-cart-btn {
     @apply bg-primary flex justify-center items-center gap-x-2 p-3 font-semibold uppercase;
 }
-
 .add-to-cart-btn:hover {
     @apply shadow-lg;
+}
+
+/* Outline Button */
+.outline-btn {
+    @apply border p-3 font-semibold text-[#999] text-center;
+    border: 2px solid #ddd
+}
+
+.outline-btn:hover {
+    @apply bg-primary text-base-100 border-primary shadow-lg;
 }
 
 /* CAROUSEL ANIMATIONS */
