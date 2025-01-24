@@ -65,6 +65,8 @@
 .item-content>p {
     @apply text-[#999]
 }
+
+
 /* FEATURED PRODUCTS SECTION */
 /* Countdown Timer */
 .timer-container {

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import PrimaryBtn from "../shared/PrimaryBtn";
+import PrimaryBtn from "../../shared/PrimaryBtn";
 import { useState } from "react";
 
 const CarouselBannerSection = () => {
