@@ -6,6 +6,8 @@ import AddToWishlistBtn from "../../../../shared/AddToWishlistBtn";
 import QuickViewBtn from "../../../../shared/QuickViewBtn";
 import CardTitle from "../CardTitle";
 import ProductRating from "../../../../shared/ProductRating";
+import OfferBadge from "@/app/components/shared/Badges/OfferBadge";
+import NewItemBadge from "@/app/components/shared/Badges/NewItemBadge";
 
 const DealOfTheDayCard = () => {
   return (
@@ -17,15 +19,21 @@ const DealOfTheDayCard = () => {
       />
       {/* REPLACE */}
       {/* Product Image */}
-      <Link href="/">
-        <Image
-          src="/images/product/large-size/1.jpg"
-          alt="Shoes"
-          width={220}
-          height={220}
-          className="mx-auto m-0 p-0"
-        />
-      </Link>
+      <div className="relative">
+        <Link href="/">
+          <Image
+            src="/images/product/large-size/1.jpg"
+            alt="Shoes"
+            width={220}
+            height={220}
+            className="mx-auto m-0 p-0"
+          />
+        </Link>
+        <div className="absolute top-5 left-0 space-y-2 text-center">
+          <OfferBadge discountOf={33} />
+          <NewItemBadge />
+        </div>
+      </div>
 
       {/* Countdown Timer */}
       <p className="text-secondary mb-2.5 text-sm">Hurry up! Offer ends in:</p>
