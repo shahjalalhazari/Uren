@@ -8,6 +8,18 @@
 .primary-btn:hover {
     @apply text-secondary
 }
+/* ----------------------- */
+
+/* SHOP NOW BUTTON */
+.shop-now-btn {
+    @apply bg-primary text-black uppercase px-3 py-2 font-semibold rounded-md shadow-md transition-all ease-in
+}
+
+.shop-now-btn:hover {
+    @apply bg-secondary text-base-100
+}
+
+/* ----------------------- */
 
 /* Add To Cart Button */
 .add-to-cart-btn {
@@ -16,6 +28,8 @@
 .add-to-cart-btn:hover {
     @apply shadow-lg;
 }
+
+/* ----------------------- */
 
 /* Outline Button */
 .outline-btn {
@@ -26,6 +40,7 @@
 .outline-btn:hover {
     @apply bg-primary text-base-100 border-primary shadow-lg;
 }
+/* ----------------------- */
 
 /* CAROUSEL ANIMATIONS */
 /* Animation Style 01 */
@@ -79,3 +94,4 @@
     -webkit-animation: 2200ms ease-in-out 0s normal none 1 running zoomInLeft;
     animation: 2200ms ease-in-out 0s normal none 1 running zoomInLeft;
 }
+/* ----------------------- */
