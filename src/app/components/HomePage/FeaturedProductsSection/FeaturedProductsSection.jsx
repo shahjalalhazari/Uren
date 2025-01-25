@@ -1,4 +1,5 @@
 import DealOfTheDayCard from "./components/cards/DealOfTheDayCard";
+import MostViewedProductsCard from "./components/cards/MostViewedProductsCard";
 import WeeklyFeaturedProductsCard from "./components/cards/WeeklyFeaturedProductsCard";
 
 const FeaturedProductsSection = () => {
@@ -8,6 +9,9 @@ const FeaturedProductsSection = () => {
       <DealOfTheDayCard />
       {/* 2nd Card | Weekly Featured Products */}
       <WeeklyFeaturedProductsCard />
+
+      {/* 3rd Card | Weekly Most Viewed Products */}
+      <MostViewedProductsCard />
     </div>
   );
 };

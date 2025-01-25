@@ -9,7 +9,7 @@ import ProductRating from "../../../../shared/ProductRating";
 
 const DealOfTheDayCard = () => {
   return (
-    <div className="bg-base-100 w-full shadow-md pt-10 px-4 pb-4">
+    <div className="card-container">
       {/* Card Heading */}
       <CardTitle
         heading={"Deal Of The Day"}
@@ -32,17 +32,15 @@ const DealOfTheDayCard = () => {
       <CountdownTimer targetDate="2025-01-31T23:59:59" />
 
       {/* Product Content */}
-      <div className="mt-4">
+      <div className="mt-4 deal-of-the-day">
         {/* Product Details */}
         {/* REPLACE */}
         <Link href={"/"}>
-          <h4 className="text-dark text-xl font-semibold hover:text-primary">
-            Veniam officiis voluptates
-          </h4>
+          <h4 className="product-name">Veniam officiis voluptates</h4>
         </Link>
         <div className="flex gap-4 items-center mt-3">
-          <h2 className="text-secondary text-2xl font-bold">$89.00</h2>
-          <h5 className="text-[#999] line-through">$109.99</h5>
+          <h2 className="new-price">$89.00</h2>
+          <h5 className="old-price">$109.99</h5>
         </div>
 
         {/* Product Rating */}

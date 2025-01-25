@@ -1,15 +1,15 @@
+import React from "react";
 import CardTitle from "../CardTitle";
 import FeaturedSingleProductCard from "../FeaturedSingleProductCard";
 
-const WeeklyFeaturedProductsCard = () => {
+const MostViewedProductsCard = () => {
   return (
-    <div className="card-container max-h-[96vh]">
+    <div className="card-container">
       {/* Card Heading */}
       <CardTitle
-        heading={"Featured Products"}
-        subHeading={"Top Featured On This Week"}
+        heading={"Most View Products"}
+        subHeading={"Most View On This Week"}
       />
-
       {/* All Weekly Featured Products List */}
       <div className="h-[75vh] overflow-y-auto mt-4">
         {/* REPLACE */}
@@ -21,4 +21,4 @@ const WeeklyFeaturedProductsCard = () => {
   );
 };
 
-export default WeeklyFeaturedProductsCard;
+export default MostViewedProductsCard;
