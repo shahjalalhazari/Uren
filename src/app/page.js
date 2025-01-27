@@ -5,6 +5,7 @@ import ShoppingFacilitiesSection from "./components/HomePage/ShoppingFacilitiesS
 import FeaturedCategoriesSection from "./components/HomePage/FeaturedCategoriesSection/FeaturedCategoriesSection";
 import FeaturedProductsSection from "./components/HomePage/FeaturedProductsSection/FeaturedProductsSection";
 import OfferBigBannerSection from "./components/HomePage/OfferBigBannerSection/OfferBigBannerSection";
+import NewArrivalProductsSection from "./components/HomePage/NewArrivalProductsSection/NewArrivalProductsSection";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <ShoppingFacilitiesSection />
       <FeaturedCategoriesSection />
       <FeaturedProductsSection />
-      <OfferBigBannerSection/>
+      <OfferBigBannerSection />
+      <NewArrivalProductsSection />
     </>
   );
 }

@@ -67,6 +67,25 @@
 }
 /* ----------------------- */
 
+/* FEATURED CATEGORIES SECTION */
+.category-item-card {
+    @apply bg-white flex flex-col items-center text-center py-5;
+}
+
+.category-item-card:hover {
+    @apply shadow-xl;
+}
+
+.category-item-card-title {
+    @apply text-lg font-semibold text-[#999];
+}
+
+.category-item-card-title:hover {
+    @apply text-primary
+}
+
+/* ----------------------- */
+
 
 /* FEATURED PRODUCTS SECTION */
 .card-container {
@@ -163,3 +182,23 @@
 .big-single-banner-content>p {
     @apply w-[75%] text-sm;
 }
+/* ------------------------ */
+
+/* NEW ARRIVAL PRODUCTS SECTION */
+.new-arrival-slider {
+    @apply border-y border-l border-[#ddd] mt-8;
+}
+
+.new-arrival-slider:last-child {
+    @apply border-r;
+}
+
+.new-arrival-slider-card {
+    @apply bg-base-100 cursor-pointer;
+}
+
+.new-arrival-card-content {
+    @apply flex flex-col gap-1.5 items-center text-center px-2 pt-0 p-4;
+}
+
+/* ------------------------ */

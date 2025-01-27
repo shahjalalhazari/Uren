@@ -34,7 +34,7 @@
 /* Outline Button */
 .outline-btn {
     @apply border p-3 font-semibold text-[#999] text-center;
-    border: 2px solid #ddd
+    border: 1px solid #ddd
 }
 
 .outline-btn:hover {

@@ -1,6 +1,5 @@
 import Image from "next/image";
-import PrimaryBtn from "../../shared/PrimaryBtn";
-import ShopNowBtn from "../../shared/ShopNowBtn";
+import ShopNowBtn from "../../shared/Buttons/ShopNowBtn";
 
 const OfferBigBannerSection = () => {
   return (

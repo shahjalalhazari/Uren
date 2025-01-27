@@ -47,7 +47,7 @@ const FeaturedCategoriesSection = () => {
     },
   };
   return (
-    <div className="mx-8 py-0 mb-20">
+    <div className="ml-8 mr-10 py-0 mb-20">
       {/* Section Heading */}
       <SectionHeading
         heading="Featured Categories"
@@ -70,7 +70,7 @@ const FeaturedCategoriesSection = () => {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         deviceType={deviceType}
-        itemClass="mt-12"
+        itemClass="mt-12 border-y border-l"
       >
         {featuredCategories.map((item, index) => (
           <CategoryItemCard key={index} categoryItem={item} />

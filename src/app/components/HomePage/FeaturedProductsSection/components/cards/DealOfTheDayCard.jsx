@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BiHeart, BiShoppingBag } from "react-icons/bi";
 import CountdownTimer from "../CountdownTimer";
-import AddToCartBtn from "../../../../shared/AddToCartBtn";
-import AddToWishlistBtn from "../../../../shared/AddToWishlistBtn";
-import QuickViewBtn from "../../../../shared/QuickViewBtn";
+import AddToCartBtn from "../../../../shared/Buttons/AddToCartBtn";
 import CardTitle from "../CardTitle";
 import ProductRating from "../../../../shared/ProductRating";
 import OfferBadge from "@/app/components/shared/Badges/OfferBadge";
 import NewItemBadge from "@/app/components/shared/Badges/NewItemBadge";
+import OutlineBtn from "@/app/components/shared/Buttons/OutlineBtn";
 
 const DealOfTheDayCard = () => {
   return (
@@ -61,11 +61,11 @@ const DealOfTheDayCard = () => {
 
           {/* Add to Wishlist Button */}
           {/* REPLACE */}
-          <AddToWishlistBtn />
+          <OutlineBtn btnIcon={<BiHeart />} btnTitle={"Add To WishList"} />
 
           {/* Quick View Button */}
           {/* REPLACE */}
-          <QuickViewBtn />
+          <OutlineBtn btnIcon={<BiShoppingBag />} btnTitle={"Quick View"} />
         </div>
       </div>
     </div>
