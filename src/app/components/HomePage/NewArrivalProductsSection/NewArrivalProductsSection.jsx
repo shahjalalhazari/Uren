@@ -9,6 +9,8 @@ import { FaRegShareSquare } from "react-icons/fa";
 import SectionHeading from "../../shared/SectionHeading";
 import ProductRating from "../../shared/ProductRating";
 import OutlineBtn from "../../shared/Buttons/OutlineBtn";
+import NewItemBadge from "../../shared/Badges/NewItemBadge";
+import OfferBadge from "../../shared/Badges/OfferBadge";
 
 const NewArrivalProductsSection = () => {
   const [deviceType, setDeviceType] = useState("desktop");
@@ -79,19 +81,34 @@ const NewArrivalProductsSection = () => {
       >
         {newArrivalProducts.map((item, index) => (
           <div key={index} className="new-arrival-slider-card">
-            <Image
-              src={item.image}
-              width={150}
-              height={150}
-              alt={item.name}
-              className="mx-auto p-0 m-0"
-            />
+            <div className="relative">
+              <Image
+                src={item.image}
+                width={150}
+                height={150}
+                alt={item.name}
+                className="mx-auto p-0 m-0"
+              />
+              <div className="absolute top-3 left-3 text-center space-y-2">
+                {item.discountOf > 0 && (
+                  <OfferBadge discountOf={item.discountOf} />
+                )}
+                {item.isNew && <NewItemBadge />}
+              </div>
+            </div>
             {/* Default Product Content */}
-            <div className="new-arrival-card-content">
+            <div className="new-arrival-item-content">
               <ProductRating rating={item.rating} />
               <h2 className="text-sm text-[#999]">{item.name}</h2>
-              <p className="text-blue-500">${item.price}</p>
-              <div className="flex gap-3">
+              <p className="new-arrival-item-price">
+                <span className="text-blue-500">${item.price.toFixed(2)}</span>
+                {item.oldPrice > 0 && (
+                  <span className="text-sm line-through">
+                    ${item.oldPrice.toFixed(2)}
+                  </span>
+                )}
+              </p>
+              <div className="flex gap-4">
                 {/* ADD TO CART BUTTON */}
                 {/* REPLACE */}
                 <Link href={"/"}>
@@ -125,91 +142,136 @@ const newArrivalProducts = [
   {
     name: "Veni am offi ciis volup tates",
     price: 89.99,
+    oldPrice: 0.0,
     image: "/images/product/medium-size/1.png",
     rating: 3.5,
+    isNew: true,
+    discountOf: 24,
   },
   {
     name: "Veniam offic iis volu ptates",
-    price: 109.99,
+    price: 750.0,
+    oldPrice: 0.0,
     image: "/images/product/medium-size/2.png",
     rating: 3,
+    isNew: false,
+    discountOf: 55,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 89.99,
+    oldPrice: 150.0,
     image: "/images/product/medium-size/3.png",
     rating: 3.5,
+    isNew: true,
+    discountOf: 0,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 250.5,
+    oldPrice: 175.99,
     image: "/images/product/medium-size/4.png",
     rating: 5,
+    isNew: false,
+    discountOf: 33,
   },
   {
     name: "Veniam offi ciis voluptates",
-    price: 109.99,
+    price: 550.75,
+    oldPrice: 440.65,
     image: "/images/product/medium-size/5.png",
     rating: 4,
+    isNew: false,
+    discountOf: 74,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 89.99,
+    oldPrice: 0.0,
     image: "/images/product/medium-size/6.png",
     rating: 2,
+    isNew: false,
+    discountOf: 60,
   },
   {
     name: "Ven iam officiis voluptates",
-    price: 109.99,
+    price: 135.0,
+    oldPrice: 0.0,
     image: "/images/product/medium-size/7.png",
     rating: 2.5,
+    isNew: true,
+    discountOf: 24,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 999.99,
+    oldPrice: 0.0,
     image: "/images/product/medium-size/8.png",
     rating: 1,
+    isNew: true,
+    discountOf: 44,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 89.99,
+    oldPrice: 120.99,
     image: "/images/product/medium-size/9.png",
     rating: 3,
+    isNew: true,
+    discountOf: 24,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 345.99,
+    oldPrice: 300.0,
     image: "/images/product/medium-size/10.png",
     rating: 3.5,
+    isNew: false,
+    discountOf: 19,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 240.99,
+    oldPrice: 0.0,
     image: "/images/product/medium-size/11.png",
     rating: 5,
+    isNew: true,
+    discountOf: 24,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 89.99,
+    oldPrice: 110.0,
     image: "/images/product/medium-size/12.png",
     rating: 4,
+    isNew: true,
+    discountOf: 42,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 89.99,
+    oldPrice: 0.0,
     image: "/images/product/medium-size/13.png",
     rating: 3,
+    isNew: false,
+    discountOf: 25,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 110.99,
+    oldPrice: 0.0,
     image: "/images/product/medium-size/14.png",
     rating: 2.5,
+    isNew: true,
+    discountOf: 24,
   },
   {
     name: "Veniam officiis voluptates",
-    price: 109.99,
+    price: 189.99,
+    oldPrice: 220.0,
     image: "/images/product/medium-size/15.png",
     rating: 3,
+    isNew: true,
+    discountOf: 66,
   },
 ];

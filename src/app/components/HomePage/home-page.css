@@ -197,8 +197,11 @@
     @apply bg-base-100 cursor-pointer;
 }
 
-.new-arrival-card-content {
+.new-arrival-item-content {
     @apply flex flex-col gap-1.5 items-center text-center px-2 pt-0 p-4;
 }
 
+.new-arrival-item-price {
+    @apply flex items-center gap-1 text-[#999];
+}
 /* ------------------------ */
