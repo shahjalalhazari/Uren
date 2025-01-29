@@ -36,6 +36,7 @@ const CarouselBannerSection = () => {
                 <h2 className="carousel-heading">{banner.heading}</h2>
                 <div className="h-1 bg-secondary w-20 mx-auto rounded"></div>
                 <p>{banner.description}</p>
+                {/* REPLACE */}
                 <PrimaryBtn text="READ MORE" path="/" />
               </div>
             </div>
