@@ -12,7 +12,7 @@ const ShopByBrands = () => {
       />
 
       {/* Brands Lists */}
-      <div className="grid grid-cols-6 w-full my-8 border-y border-l border-[#999]">
+      <div className="grid grid-cols-6 w-full mt-8 mb-12 border-y border-l border-[#999]">
         {[...Array(6)].map((brand, index) => (
           <Image
             key={index}

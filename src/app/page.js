@@ -8,6 +8,7 @@ import OfferBigBannerSection from "./components/HomePage/OfferBigBannerSection/O
 import NewArrivalProductsSection from "./components/HomePage/NewArrivalProductsSection/NewArrivalProductsSection";
 import TestimonialSection from "./components/HomePage/TestimonialSection/TestimonialSection";
 import ShopByBrands from "./components/HomePage/ShopByBrands/ShopByBrands";
+import BlogsSection from "./components/HomePage/BlogsSection/BlogsSection";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
       <OfferBigBannerSection />
       <NewArrivalProductsSection />
       <TestimonialSection />
-      <ShopByBrands/>
+      <ShopByBrands />
+      <BlogsSection/>
     </>
   );
 }
