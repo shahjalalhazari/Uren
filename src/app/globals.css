@@ -3,10 +3,10 @@
 @tailwind utilities;
 /* Primary Button */
 .primary-btn {
-    @apply bg-primary px-10 py-3 font-semibold uppercase shadow-md rounded-md transition-all ease-in-out duration-300;
+    @apply bg-primary text-black px-10 py-3 font-semibold uppercase shadow-md rounded-md transition-all ease-in-out duration-300;
 }
 .primary-btn:hover {
-    @apply text-secondary
+    @apply text-base-100 shadow-xl bg-secondary
 }
 /* ----------------------- */
 

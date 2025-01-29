@@ -217,5 +217,34 @@
 .testimonial-comment {
     @apply text-base-100 text-xl bg-black bg-opacity-30 border border-white border-opacity-30 py-12 px-10 leading-relaxed;
 }
-
 /* ------------------- */
+/* NEWSLETTER SECTION */
+.newsletter-bg {
+    @apply bg-fixed bg-center bg-cover;
+}
+
+.newsletter-content {
+    @apply z-10 bg-black bg-opacity-70 text-center py-20 w-full h-full text-base-100;
+}
+
+.newsletter-heading {
+    @apply text-3xl font-semibold mb-2;
+}
+
+.newsletter-form {
+    @apply mt-10 w-1/2 flex mx-auto;
+}
+
+.newsletter-form>input {
+    @apply w-full pl-5 py-3
+}
+
+.newsletter-submit-btn {
+    @apply bg-primary uppercase px-12 py-3 font-bold text-black transition-all ease-in-out duration-300
+}
+
+.newsletter-submit-btn:hover {
+    @apply bg-secondary text-base-100;
+}
+
+/* ------------------ */
