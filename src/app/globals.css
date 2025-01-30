@@ -42,6 +42,17 @@
 }
 /* ----------------------- */
 
+/* SCROLL UP BUTTON */
+.scroll-up-btn {
+    @apply fixed right-4 bottom-4 w-12 h-12 flex items-center z-[100] justify-center rounded-full bg-secondary text-base-100 text-lg transition;
+}
+
+.scroll-up-btn:hover {
+    @apply bg-primary;
+}
+
+/* --------------------- */
+
 /* BLOG's STYLE */
 .blog-layout {
     @apply grid grid-cols-4 gap-x-8;

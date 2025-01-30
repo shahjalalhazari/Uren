@@ -3,6 +3,7 @@ import "./globals.css";
 import "animate.css";
 import Navbar from './components/shared/Navbar/Navbar';
 import Footer from './components/shared/Footer';
+import ScrollUp from './components/shared/ScrollUp';
 
 const workSans = Work_Sans({
   subsets: ['latin'],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <ScrollUp/>
         <Footer/>
       </body>
     </html>
