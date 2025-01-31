@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaAngleDown, FaDollarSign, FaUser } from "react-icons/fa";
 
-const BottomNavbar = () => {
+const BottomNavbar = ({ navItems }) => {
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isCurrencyOpen, setCurrencyOpen] = useState(false);
   const [isLanguageOpen, setLanguageOpen] = useState(false);
@@ -154,29 +154,7 @@ const BottomNavbar = () => {
 
 export default BottomNavbar;
 
-// Nav Items List
-const navItems = [
-  {
-    title: "HOME",
-    path: "/",
-  },
-  {
-    title: "ABOUT US",
-    path: "/about",
-  },
-  {
-    title: "SERVICES",
-    path: "/services",
-  },
-  {
-    title: "BLOG",
-    path: "/blog",
-  },
-  {
-    title: "CONTACT US",
-    path: "/contact",
-  },
-];
+
 
 // CATEGORY LIST
 const categories = [

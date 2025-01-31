@@ -64,7 +64,7 @@ const OfferBannersSection = () => {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         deviceType={deviceType}
-        itemClass="px-5"
+        itemClass="px-5 z-[100]"
       >
         {offerBannersList.map((offerBanner, index) => (
           <Link
