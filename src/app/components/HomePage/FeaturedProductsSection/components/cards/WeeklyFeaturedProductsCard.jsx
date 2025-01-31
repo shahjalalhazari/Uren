@@ -3,7 +3,7 @@ import FeaturedSingleProductCard from "../FeaturedSingleProductCard";
 
 const WeeklyFeaturedProductsCard = () => {
   return (
-    <div className="card-container max-h-[96vh]">
+    <div className="card-container max-h-[88vh]">
       {/* Card Heading */}
       <CardTitle
         heading={"Featured Products"}
@@ -11,7 +11,7 @@ const WeeklyFeaturedProductsCard = () => {
       />
 
       {/* All Weekly Featured Products List */}
-      <div className="h-[75vh] overflow-y-auto mt-4">
+      <div className="h-[68vh] overflow-y-auto mt-4">
         {/* REPLACE */}
         {[...Array(10)].map((_, index) => (
           <FeaturedSingleProductCard key={index} />

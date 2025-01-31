@@ -11,7 +11,7 @@ const MostViewedProductsCard = () => {
         subHeading={"Most View On This Week"}
       />
       {/* All Weekly Featured Products List */}
-      <div className="h-[75vh] overflow-y-auto mt-4">
+      <div className="h-[68vh] overflow-y-auto mt-4">
         {/* REPLACE */}
         {[...Array(10)].map((_, index) => (
           <FeaturedSingleProductCard key={index} />

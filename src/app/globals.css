@@ -179,11 +179,11 @@
     @apply flex flex-col text-[#999] gap-y-3;
 }
 
-.footer-nav-items {
-    @apply transition-all ease-in-out duration-300;
+.footer-nav-link {
+    @apply transition-all ease-in-out duration-300 text-[#999];
 }
 
-.footer-nav-items:hover {
+.footer-nav-link:hover {
     @apply text-primary underline;
 }
 

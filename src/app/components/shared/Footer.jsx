@@ -87,24 +87,16 @@ const Footer = () => {
         </aside>
         {/* Column 2 */}
         <nav className="">
-          <h6 className="footer-nav-heading">Navigation</h6>
+          <h6 className="footer-nav-heading">Information</h6>
           <div className="bg-primary w-16 h-[1px] mt-4 mb-5"></div>
           <ul className="footer-nav-item-list">
-            <li className="footer-nav-items">
-              <Link href={"/"}>Home</Link>
-            </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>About Us</Link>
-            </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Services</Link>
-            </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Blogs</Link>
-            </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Contact Us</Link>
-            </li>
+            {InfoNavItems.map((item) => (
+              <li key={item.path} className="">
+                <Link href={item.path} className="footer-nav-link">
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         {/* Column 3 */}
@@ -112,14 +104,20 @@ const Footer = () => {
           <h6 className="footer-nav-heading">Customer Service</h6>
           <div className="bg-primary w-16 h-[1px] mt-4 mb-5"></div>
           <ul className="footer-nav-item-list">
-            <li className="footer-nav-items">
-              <Link href={"/"}>Contact Us</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                Contact Us
+              </Link>
             </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Returns</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                Returns
+              </Link>
             </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Shop Locations</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                Shop Locations
+              </Link>
             </li>
           </ul>
         </nav>
@@ -127,17 +125,20 @@ const Footer = () => {
           <h6 className="footer-nav-heading">Extras</h6>
           <div className="bg-primary w-16 h-[1px] mt-4 mb-5"></div>
           <ul className="footer-nav-item-list">
-            <li className="footer-nav-items">
-              <Link href={"/"}>About Us</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                Delivery Information
+              </Link>
             </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Delivery Information</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                Privacy Policy
+              </Link>
             </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Privacy Policy</Link>
-            </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Terms & Conditions</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                Terms & Conditions
+              </Link>
             </li>
           </ul>
         </nav>
@@ -146,17 +147,25 @@ const Footer = () => {
           <h6 className="footer-nav-heading">My Account</h6>
           <div className="bg-primary w-16 h-[1px] mt-4 mb-5"></div>
           <ul className="footer-nav-item-list">
-            <li className="footer-nav-items">
-              <Link href={"/"}>My Profile</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                My Profile
+              </Link>
             </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Order Cart</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                Order Cart
+              </Link>
             </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Order History</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                Order History
+              </Link>
             </li>
-            <li className="footer-nav-items">
-              <Link href={"/"}>Wish List</Link>
+            <li className="">
+              <Link href={"/"} className="footer-nav-link">
+                Wish List
+              </Link>
             </li>
           </ul>
         </nav>
@@ -189,3 +198,27 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// Nav Items List
+const InfoNavItems = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "About Us",
+    path: "/about",
+  },
+  {
+    title: "Services",
+    path: "/services",
+  },
+  {
+    title: "Blogs",
+    path: "/blog",
+  },
+  {
+    title: "Contact Us",
+    path: "/contact",
+  },
+];
